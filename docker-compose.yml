@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  fastapi:
+    build:
+      context: .
+      dockerfile: dockerfile.fastapi
+    ports:
+      - "8000:8000"
+    environment:
+      - GROQ_API_KEY=
+  streamlit:
+    build:
+      context: .
+      dockerfile: dockerfile.streamlit
+    ports:
+      - "8501:8501"
+    depends_on:
+      - fastapi
