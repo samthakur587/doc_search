@@ -29,10 +29,12 @@ markdown-it-py==3.0.0
 MarkupSafe==2.1.5
 mdurl==0.1.2
 numpy==1.26.4
+openai==1.25.1
 orjson==3.10.1
 packaging==23.2
 pandas==2.2.2
 pillow==10.3.0
+pinecone==4.0.0
 protobuf==4.25.3
 pyarrow==16.0.0
 pydantic==2.7.1
@@ -56,6 +58,7 @@ tenacity==8.2.3
 toml==0.10.2
 toolz==0.12.1
 tornado==6.4
+tqdm==4.66.4
 typing_extensions==4.11.0
 tzdata==2024.1
 urllib3==2.2.1
